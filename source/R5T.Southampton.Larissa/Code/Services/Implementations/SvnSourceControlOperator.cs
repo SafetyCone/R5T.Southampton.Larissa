@@ -38,7 +38,8 @@ namespace R5T.Southampton.Larissa
 
         public string GetRemoteRepositoryUrl(string path)
         {
-            throw new NotImplementedException();
+            var remoteRepositoryUrl = this.SvnOperator.GetRemoteRepositoryUrl(path);
+            return remoteRepositoryUrl;
         }
 
         public string GetRepositoryRootDirectoryPath(string path)
@@ -53,7 +54,7 @@ namespace R5T.Southampton.Larissa
 
         public void Update(string path)
         {
-            throw new NotImplementedException();
+            this.SvnOperator.Update(path);
         }
 
         public SourceControlOperatorInformation GetOperatorInformation()
