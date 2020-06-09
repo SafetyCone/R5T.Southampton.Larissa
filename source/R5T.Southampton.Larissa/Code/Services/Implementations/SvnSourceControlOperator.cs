@@ -26,9 +26,9 @@ namespace R5T.Southampton.Larissa
             this.SvnOperator.Add(path);
         }
 
-        public void Checkout(string repositoryUrl, string localDirectoryPath)
+        public void Checkout(string repositoryUrl, string localDirectoryPath, string username, string password)
         {
-            this.SvnOperator.Checkout(repositoryUrl, localDirectoryPath);
+            this.SvnOperator.Checkout(repositoryUrl, localDirectoryPath, username, password);
         }
 
         public void CommitToRemote(string path, string message)
