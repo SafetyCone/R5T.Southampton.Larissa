@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 
 using Microsoft.Extensions.Logging;
 
-using R5T.Larissa;
+using R5T.Larissa;using R5T.T0064;
 
 
 namespace R5T.Southampton.Larissa
-{
-    public class SvnSourceControlOperator : ISourceControlOperator
+{[ServiceImplementationMarker]
+    public class SvnSourceControlOperator : ISourceControlOperator,IServiceImplementation
     {
         private ISvnOperator SvnOperator { get; }
         private ISvnversionOperator SvnversionOperator { get; }
